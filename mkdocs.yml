@@ -1,0 +1,17 @@
+site_name: PandoraWCS
+nav:
+    - Home: README.md
+theme:
+  name: "material"
+  icon:
+      logo: material/clipboard
+repo_url: https://github.com/pandoramission/pandora-wcs
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: False
+      include_source: True
+      ignore_h1_titles: False
+  - mkdocstrings:
+      watch:
+        - src/pandorasim
